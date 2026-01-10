@@ -247,30 +247,26 @@ while True:
         print("Parabéns! Você acertou!")
         break
 -----------------------------------------------------------------
+    
 """
-
-#"""Exercicio 20:
+#Exercicio 20:
 #Peça um número ao usuário e mostre a sequência de Fibonacci até esse número usando for.
-"""
-numero = int(input('Digite um número para ver a sequência de Fibonacci até ele: '))
 
-i = 0
-for i in range(0, numero):
-    soma = 
-    total = soma + i
-    print(total)
-"""
+numero = int(input("Digite um número: "))
 
-n = int(input("Digite um número: "))
-
-a = 0
-b = 1
+num1 = 0
+num2 = 1
 
 print("Sequência de Fibonacci:")
 
-for _ in range(n):
-    print(a, end=" ")
-    a, b = b, a + b
+for _ in range(numero):
+    print(num1, end=" ")
+    num1, num2 = num2, num1 + num2
+
+
+
+
+
 
 
 
