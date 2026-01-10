@@ -165,14 +165,32 @@ else:
     print('Numero maximo de tentativas atingida')
 
 ----------------------------------------------------------------
-"""
 
 #Exercicio 14:
 #Peça ao usuário um número e mostre todos os divisores desse número usando for.
 
+numero = int(input('Digite um Número: '))
+
+for i in range(1, numero + 1):
+    if numero % i == 0:
+        print(i)
+
+----------------------------------------------------------------
 
 #Exercicio 15:
 #Peça ao usuário um número e calcule o fatorial dele usando while.
+
+numero = int(input('Digite um número para calcular o fatorial: '))
+fatorial = 1
+i = 1
+
+while i <= numero:
+    fatorial *= i
+    i += 1
+
+print(f'O fatorial de {numero} é {fatorial}')
+
+----------------------------------------------------------------
 
 #Exercicio 16:
 #Use for para imprimir o seguinte padrão:
@@ -182,12 +200,36 @@ else:
 #****
 #*****
 
+for i in range(1,9):
+    print('1' * i)
+
+----------------------------------------------------------------
+
 #Exercicio 17:
 #Use dois loops (for dentro de for) para imprimir a tabuada de 1 a 5.
+
+for i in range(1,11):
+    print(f'Tabuada do {i}:')
+    for j in range(1,11):
+        resultado = i * j
+        print(f'{i} x {j} = {resultado}')
+    print('--------------')
+
+----------------------------------------------------------------
 
 #Exercicio 18:
 #Peça números ao usuário até que ele digite "sair".
 #No final, mostre quantos números foram digitados.
+
+cont = 0
+while True:
+    entrada = input('Digite um número (ou "sair" para encerrar): ')
+    cont = cont + 1
+    if entrada.lower() == 'sair':
+        print(f'Você digitou {cont - 1 } números antes de sair.')
+        break
+        
+------------------------------------------------------------------
 
 #Exercicio 19:
 #Crie um jogo de adivinhação:
@@ -198,9 +240,39 @@ else:
 
 #O programa só para quando ele acertar (use while e break)
 
-#Exercicio 20:
+numero_secreto = 7
+while True:
+    tentativa = int(input("Tente adivinhar o número secreto (entre 1 e 10): "))
+    if tentativa == numero_secreto:
+        print("Parabéns! Você acertou!")
+        break
+-----------------------------------------------------------------
+"""
+
+#"""Exercicio 20:
 #Peça um número ao usuário e mostre a sequência de Fibonacci até esse número usando for.
+"""
+numero = int(input('Digite um número para ver a sequência de Fibonacci até ele: '))
+
+i = 0
+for i in range(0, numero):
+    soma = 
+    total = soma + i
+    print(total)
+"""
+
+n = int(input("Digite um número: "))
+
+a = 0
+b = 1
+
+print("Sequência de Fibonacci:")
+
+for _ in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
 
 
-    
+
+   
 
